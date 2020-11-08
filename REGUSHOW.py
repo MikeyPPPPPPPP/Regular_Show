@@ -42,7 +42,6 @@ class regshow:
 a = regshow()
 for x in a.pages:
     a.get_links(x)
-
 a.downloader()
 
 
