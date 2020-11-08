@@ -32,7 +32,7 @@ class regshow:
                 except:
                     pass
 
-            soups = BeautifulSoup(requests.get(vidurls[0]).text, 'html.parser')
+            #soups = BeautifulSoup(requests.get(vidurls[0]).text, 'html.parser')
 
             u = re.findall("(http|ftp|https)://([\w_-]+(?:(?:\.[\w_-]+)+))([\w.,@?^=%&:/~+#-]*[\w@?^=%&/~+#-])?", requests.get(vidurls[0]).text)[-1]
             good = ''.join(u).replace('http', 'http://')
